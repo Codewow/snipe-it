@@ -271,11 +271,11 @@
 
                         <li><!-- Task item -->
                           <a href="{{route($alert_items[$i]['type'].'.show', $alert_items[$i]['id'])}}">
-                            <h2>{{ $alert_items[$i]['name'] }}
-                              <small class="pull-right">
+                            <span>{{ $alert_items[$i]['name'] }}
+                              <small class="items-remaining">
                                 {{ $alert_items[$i]['remaining'] }} {{ trans('general.remaining') }}
                               </small>
-                            </h2>
+                            </span>
                             <div class="progress xs">
                               <div class="progress-bar progress-bar-yellow" style="width: {{ $alert_items[$i]['percent'] }}%" role="progressbar" aria-valuenow="{{ $alert_items[$i]['percent'] }}" aria-valuemin="0" aria-valuemax="100">
                                 <span class="sr-only">{{ $alert_items[$i]['percent'] }}% Complete</span>
